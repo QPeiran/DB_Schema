@@ -82,3 +82,7 @@ CREATE TABLE salaries (
 
 INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date)
 VALUES (1, '1991-09-23', 'Kunkka', 'microco', 'M', '2018-12-4');
+
+INSERT INTO employees
+VALUES (2, '1993-04-25', 'Shadow', 'Field', 'M', '2018-12-5'),
+       (3, '1995-01-29', 'Wind', 'Ranger', 'F', '2018-12-5');
