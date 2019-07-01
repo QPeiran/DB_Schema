@@ -1,16 +1,18 @@
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE IF NOT EXISTS employees;
-USE employees;
+-- Compile Envo "SQL Fiddle".
+
+-- DROP DATABASE IF EXISTS employees;
+-- CREATE DATABASE IF NOT EXISTS employees;
+-- USE employees;
 
 
-DROP TABLE IF EXISTS dept_emp,
-                     dept_manager,
-                     titles,
-                     salaries, 
-                     employees, 
-                     departments;
+-- DROP TABLE IF EXISTS dept_emp,
+--                     dept_manager,
+--                     titles,
+--                     salaries, 
+--                     employees, 
+--                     departments;
 
-   set storage_engine = InnoDB;
+-- set storage_engine = InnoDB;
 -- set storage_engine = MyISAM;
 -- set storage_engine = Falcon;
 -- set storage_engine = PBXT;
@@ -77,3 +79,6 @@ CREATE TABLE salaries (
     FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
     PRIMARY KEY (emp_no, from_date)
 ); 
+
+INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date)
+VALUES (1, '1991-09-23', 'Kunkka', 'microco', 'M', '2018-12-4');
