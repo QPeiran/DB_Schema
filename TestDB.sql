@@ -1,8 +1,8 @@
--- Compile Envo "SQL Fiddle".
+-- Compile Envo "Google Cloud SQL".
 
 -- DROP DATABASE IF EXISTS employees;
 -- CREATE DATABASE IF NOT EXISTS employees;
--- USE employees;
+USE employees;
 
 
 -- DROP TABLE IF EXISTS dept_emp,
@@ -12,7 +12,7 @@
 --                     employees, 
 --                     departments;
 
--- set storage_engine = InnoDB;
+-- set storage_engine = InnoDB; Google Cloud SQL support and only support InnoDB
 -- set storage_engine = MyISAM;
 -- set storage_engine = Falcon;
 -- set storage_engine = PBXT;
