@@ -91,3 +91,11 @@ INSERT INTO titles
 VALUES (1, 'Manager', '2008-9-9', '2009-8-8'),
        (1, 'Associate Manager', '2008-12-9', '2011-9-8'),
        (2, 'IT', '2017-3-3', '2019-12-12');
+
+SELECT employees.birth_date, employees.first_name, titles.title, titles.emp_no
+FROM employees
+INNER JOIN titles ON titles.emp_no = employees.emp_no;
+
+SELECT employees.birth_date, employees.first_name, titles.title, titles.emp_no
+FROM employees
+LEFT JOIN titles ON titles.emp_no = employees.emp_no;
