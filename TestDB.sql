@@ -86,3 +86,8 @@ VALUES (1, '1991-09-23', 'Kunkka', 'microco', 'M', '2018-12-4');
 INSERT INTO employees
 VALUES (2, '1993-04-25', 'Shadow', 'Field', 'M', '2018-12-5'),
        (3, '1995-01-29', 'Wind', 'Ranger', 'F', '2018-12-5');
+
+INSERT INTO titles
+VALUES (1, 'Manager', '2008-9-9', '2009-8-8'),
+       (1, 'Associate Manager', '2008-12-9', '2011-9-8'),
+       (2, 'IT', '2017-3-3', '2019-12-12');
